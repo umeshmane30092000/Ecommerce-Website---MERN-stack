@@ -1,12 +1,13 @@
 import * as firebase from "firebase";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDPgIh2eM2LnYPmb8qsS1G3vbSLFR2tDBg",
-    authDomain: "ecommerce-b9398.firebaseapp.com",
-    projectId: "ecommerce-b9398",
-    storageBucket: "ecommerce-b9398.appspot.com",
-    messagingSenderId: "921480349731",
-    appId: "1:921480349731:web:18532d943a4133f183c996"
+    apiKey: "AIzaSyARFqWUwptUWvKE1lMIv_6T9R_PG6mrr4g",
+    authDomain: "authproject-c48e9.firebaseapp.com",
+    projectId: "authproject-c48e9",
+    storageBucket: "authproject-c48e9.appspot.com",
+    messagingSenderId: "245613345014",
+    appId: "1:245613345014:web:8b5d8c4243efdb9c7fd4d7",
+    measurementId: "G-J2K146JSR7"
 };
 
 // Initialize Firebase
