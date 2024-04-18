@@ -3,7 +3,9 @@ const mongoose = require("mongoose");
 const morgan = require("morgan");
 const bodyParser = require("body-parser");
 const cors = require("cors");
+const {readdirSync}= require("fs");
 require("dotenv").config();
+
 
 //app
 const app = express();
@@ -22,12 +24,9 @@ app.use(morgan("dev"));
 app.use(bodyParser.json({limit:"2mb"}));
 app.use(cors());
 
-//route
-app.get("/api" , (req , res) => {
-    res.json({
-        data:"api endpoint hit"
-    })
-})
+// Routes AutoLoading
+readdirSync("./routes").map((r) => app.use("/api" , require("./routes/" + r)));
+
 
 // prot
 const port = process.env.PORT || 8000;
